@@ -1,4 +1,16 @@
 :root {
-    --branco-principal: #FFFFF;
-    --cinza-secundario: #c0c0c0
+    --color-primary: #d4af37;
+    --color-secondary: #c8102e;
+    --bg-color: #2C2C2C;
+    --text-color: #fff;
+    --texte-secondary-color: #f0f0f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
 }
