@@ -12,115 +12,123 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--montserrat-font);
+    color: var(--text-color);
 }
 
 body{
     background-color: var(--bg-color);
-    min-height: 100vh;
-    height: 100%;
+}
+.section {
+    height: 100vh;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left {
+    flex-direction: row-reverse;
+}
+
+.right {
+    flex-direction: row;
+}
+
+.info h1 {
+    font-size: 40px;
+}
+
+.info h2 {
+    font-size: 36px;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.info {
+    width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 15px;
+    align-items: start;
+    justify-content: center;
 }
 
-.topo {
+.info h1 {
+    font-size: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-primary {
+    background: transparent;
+    border: solid 2px var(--color-secondary);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    border: none;
+}
+
+.btn-secondary:hover {
+    transition: ease-in .4s;
+    background: transparent;
+    border: solid 2px var(--color-secondary);
+}
+
+.btn-secondary:not(:hover) {
+    transition: ease-out.2s;
+}
+
+.btn-primary:hover {
+    transition: ease-in .4s;
+    background-color: var(--color-secondary);
+    border: none;
+}
+
+.btn-primary:not(:hover) {
+    transition: ease-out.2s;
+}
+
+.dispositivos {
     display: flex;
     flex-direction: column;
-    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
-
-.menu-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10;
-}
-
-.menu {
+.dispositivos ul {
+    list-style: none;
     display: flex;
     gap: 10px;
 }
 
-.menu img {
-    width: 60px;
-    height: auto;
-}
-
-.menu nav menu {
-    list-style: none;
+.dispositivos ul li {
     display: flex;
-}
-
-.menu nav menu li {
-    padding: 10px;
-}
-
-.menu nav menu li a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-.ativo {
-    background-color: var(--gray-color);
-    border-radius: 30px;
-}
-
-.inativo:hover {
-    background-color: rgba(194, 194, 194, 0.2);
-    border-radius: 30px;
-    transition: ease-in .1s;
-}
-
-.inativo:not(:hover) {
-    transition: ease-out .1s;
-}
-
-.icone {
-    color: var(--gray-color);
-    cursor: pointer;
-    display: flex;
-    gap: 14px;
-    font-size: 22px;
-}
-
-.info-assinatura {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.info-texto p {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.btn-assintura button {
-    background-color: var(--color-secondary);
-    border: none;
-    width: 100px;
-    height: 40px;
-    border-radius: 30px;
-
-    color: var(--text-color);
-    font-weight: 700;
-
-    cursor: pointer;
-}
-
-.btn-assintura button:hover {
-    box-shadow: 0 4px 4px rgba(239, 12, 50, 0.5);
-    transition: ease-in .2s;
-}
-
-.btn-assintura button:not(:hover) {
-    transition: ease-in .2s;
-}
 
 .rodape {
     display: flex;
     justify-content: space-around;
-    padding: 0px 10px;
+    padding: 10px 0;
     color: var(--gray-color);
 }
 
@@ -131,7 +139,7 @@ body{
 
 .redes-sociais {
     color: var(--gray-color);
-    font-size: 10px;
+    font-size: 18px;
 
     display: flex;
     gap: 14px;
