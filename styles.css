@@ -3,14 +3,142 @@
     --color-secondary: #c8102e;
     --bg-color: #2C2C2C;
     --text-color: #fff;
-    --texte-secondary-color: #f0f0f0;
+    --gray-color: #c2c2c2;
+
+    --montserrat-font: "Montserrat", sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--montserrat-font);
 }
 
 body{
     background-color: var(--bg-color);
+    min-height: 100vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topo {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu img {
+    width: 60px;
+    height: auto;
+}
+
+.menu nav menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu nav menu li {
+    padding: 10px;
+}
+
+.menu nav menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.ativo {
+    background-color: var(--gray-color);
+    border-radius: 30px;
+}
+
+.inativo:hover {
+    background-color: rgba(194, 194, 194, 0.2);
+    border-radius: 30px;
+    transition: ease-in .1s;
+}
+
+.inativo:not(:hover) {
+    transition: ease-out .1s;
+}
+
+.icone {
+    color: var(--gray-color);
+    cursor: pointer;
+    display: flex;
+    gap: 14px;
+    font-size: 22px;
+}
+
+.info-assinatura {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.info-texto p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn-assintura button {
+    background-color: var(--color-secondary);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+
+    color: var(--text-color);
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.btn-assintura button:hover {
+    box-shadow: 0 4px 4px rgba(239, 12, 50, 0.5);
+    transition: ease-in .2s;
+}
+
+.btn-assintura button:not(:hover) {
+    transition: ease-in .2s;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10px;
+    color: var(--gray-color);
+}
+
+.dados-criador p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.redes-sociais {
+    color: var(--gray-color);
+    font-size: 10px;
+
+    display: flex;
+    gap: 14px;
+
+    cursor: pointer;
+}
+
+.redes-sociais i:hover {
+    color: var(--text-color);
 }
