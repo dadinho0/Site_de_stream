@@ -6,52 +6,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
+    <header class="topo">
+        <div class="menu-wrapper">
+            <div class="menu">
                 <img src="./assets/img/Logo.png" alt="Logo do site de Stream" title="Logo do site de stream">
                 <nav>
                     <menu>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Catálogo</a></li>
-                        <li><a href="#">Séries</a></li>
+                        <li class="ativo"><a href="#">Início</a></li>
+                        <li class="inativo"><a href="#">Catálogo</a></li>
+                        <li class="inativo"><a href="#">Séries</a></li>
                     </menu>
                 </nav>
             </div>
 
-            <div>
-                <img src="./assets/svg/search.svg" alt="">
-                <img src="./assets/svg/bell.svg" alt="">
-                <img src="./assets/svg/user.svg" alt="">    
+            <div class="icones">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-user"></i>
             </div>
         </div>
-        <div>
-            <div>
+
+        <div class="info-assinatura">
+            <div class="info-texto">
                 <p><b>Você esta da versão gratuita.</b></p>
                 <p>Assine nossa versão pluss e aproveite muito mais</p>
             </div>
-            <div>
+            <div class="btn-assinatura">
                 <button>Assine já</button>
             </div>
         </div>
     </header>
 
-    <footer>
-        <div>
+    <footer class="rodape">
+        <div class="dados-criador">
             <p>
                 &copy; Desenvolvido por Ian Eduardo Diaz Cuellar
             </p>
             <p>Criado no ano de 2024</p>
         </div>
-        <div>
-            <img src="./assets/svg/instagram.svg" alt="">
-            <img src="./assets/svg/facebook.svg" alt="">
-            <img src="./assets/svg/mail.svg" alt="">
+        <div class="redes-sociais">
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
         </div>
     </footer>
 </body>
 
 </html>
+<script src="https://kit.fontawsome.com/f4c2df2105.js" crossorigin="anonymous"></script>
